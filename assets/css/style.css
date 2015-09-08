@@ -139,7 +139,7 @@ nav.main-nav a.cta {
 }
 
 #wrapper {
-  max-width: 600px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 60px 40px 100px 40px;
 }
@@ -187,6 +187,10 @@ li	{ list-style-type:circle; list-style-position:inside; }
 
 /* Line Height */
 #post-body, p { line-height:1.7; }
+
+#post-body ul {
+	margin-bottom: 20px;
+}
 
 b, strong { font-weight: 500;
   color: #1E2025; }
@@ -642,4 +646,12 @@ h2.month {
 	.post h2.headline { font-size: 13px; }
 	.post h1 { font-size:24px; }
 	.post h2 { font-size:20px; }
+}
+
+.hljs.inline-code {
+  display: inline-block;
+  font-size: 100%;
+  margin-bottom: -8px;
+  padding: 0px 8px;
+  border-radius: 4px;
 }

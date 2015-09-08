@@ -12,21 +12,42 @@
   <link rel="stylesheet" href="{{ site.baseurl }}assets/css/highlight.css">
 </head>
 <body>
+  <div style="text-align: center;padding: 10%;" id="loading">
+    <b>ta carregando, relaxa aí</b>
+  </div>
+  <div id="container" style="display: none">
+    {% include navigation.html %}
 
-  {% include navigation.html %}
+    {% if page.profile %}
+        {% include profile.html %}
+    {% endif %}
 
-  {% if page.profile %}
-      {% include profile.html %}
-  {% endif %}
-
-  <section id="wrapper" class="{% if page.profile %}home{% endif %}">
-    {{ content }}
-  </section>
+    <section id="wrapper" class="{% if page.profile %}home{% endif %}">
+      {{ content }}
+    </section>
+  </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
   <script src="{{ site.baseurl }}assets/js/main.js"></script>
   <script src="{{ site.baseurl }}assets/js/highlight.js"></script>
-  <script>hljs.initHighlightingOnLoad();</script>
+  <script>
+    $(document).ready(function() {
+      // HAHAHAHAHAHHAHAHA
+      $('#loading').hide();
+      $('#container').fadeIn();
+      // - HAHAHAHAHAHHAHAHA
+
+      hljs.configure({languages: []})
+
+      $('pre').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+
+      $('code').addClass('inline-code').each(function(i, block) {
+        hljs.highlightBlock(block);
+      });
+    });
+  </script>
 
   <script>
     (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){

@@ -6,12 +6,12 @@ aboutPage: true
 
 markdown: redcarpet
 redcarpet:
-  extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript"]
-  
-highlighter: pygments
+  extensions: ["strikethrough", "superscript"]
+
+# highlighter: pygments
 
 paginate: 20
-baseurl: https://schleumer.github.io/textao/
+baseurl: /textao/
 domain_name: 'http://textao.ues.li/'
 # google_analytics: 'UA-XXXXXXXX-X'
 # disqus: false
