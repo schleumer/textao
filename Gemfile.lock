@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     blankslate (2.1.2.4)
     celluloid (0.16.0)
@@ -12,7 +13,7 @@ GEM
     colorator (0.1)
     execjs (2.6.0)
     fast-stemmer (1.0.2)
-    ffi (1.9.8)
+    ffi (1.9.10)
     hitimes (1.2.2)
     jekyll (2.5.3)
       classifier-reborn (~> 2.0)
@@ -39,7 +40,7 @@ GEM
       listen (~> 2.7)
     kramdown (1.8.0)
     liquid (2.6.3)
-    listen (2.10.0)
+    listen (2.10.1)
       celluloid (~> 0.16.0)
       rb-fsevent (>= 0.9.3)
       rb-inotify (>= 0.9)
@@ -50,13 +51,13 @@ GEM
     pygments.rb (0.6.3)
       posix-spawn (~> 0.3.6)
       yajl-ruby (~> 1.2.0)
-    rb-fsevent (0.9.4)
+    rb-fsevent (0.9.6)
     rb-inotify (0.9.5)
       ffi (>= 0.5.0)
     redcarpet (3.3.2)
     safe_yaml (1.0.4)
     sass (3.4.18)
-    timers (4.0.1)
+    timers (4.0.4)
       hitimes
     toml (0.1.2)
       parslet (~> 1.5.0)
@@ -68,3 +69,6 @@ PLATFORMS
 DEPENDENCIES
   jekyll
   redcarpet
+
+BUNDLED WITH
+   1.10.5
