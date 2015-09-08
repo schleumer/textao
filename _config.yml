@@ -11,7 +11,7 @@ redcarpet:
 highlighter: pygments
 
 paginate: 20
-baseurl: http://schleumer.github.io/textao/
+baseurl: https://schleumer.github.io/textao/
 domain_name: 'http://textao.ues.li/'
 # google_analytics: 'UA-XXXXXXXX-X'
 # disqus: false
