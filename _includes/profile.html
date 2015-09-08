@@ -1,0 +1,15 @@
+<div class="profile">
+    <section id="wrapper">
+        <header id="header">
+        {% if site.aboutPage %}
+            <a href="{{ site.baseurl }}about">
+                <img id="avatar" class="2x" src="http://gravatar.com/avatar/0f42eccae6b1681a2dee4a405602ec4e.jpg" title="mentira, nem programo linguagens funcionais" />
+            </a>
+        {% else %}
+            <img id="avatar" class="2x" src="http://gravatar.com/avatar/0f42eccae6b1681a2dee4a405602ec4e.jpg" title="mentira, nem programo linguagens funcionais" />
+        {% endif %}
+            <h1>{{ site.author }}</h1>
+            <h2>{{ site.description }}</h2>
+        </header>
+    </section>
+</div>

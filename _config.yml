@@ -1,0 +1,45 @@
+name: Textão
+description: Prometo não invocar Cthulhu
+meta_description: "Prometo não invocar Cthulhu"
+
+aboutPage: true
+
+markdown: redcarpet
+redcarpet:
+  extensions: ["strikethrough"]
+  
+highlighter: pygments
+
+paginate: 20
+baseurl: /
+domain_name: 'http://textao.ues.li/'
+# google_analytics: 'UA-XXXXXXXX-X'
+# disqus: false
+# disqus_shortname: 'your-disqus-shortname'
+
+# Details for the RSS feed generator
+url:            'http://textao.ues.li/'
+author:         'Wesley Schleumer de Góes'
+authorTwitter:  'schleumer'
+
+permalink:       /:year/:title/
+
+defaults:
+    -
+        scope:
+            path: "" # empty string for all files
+            type: pages
+        values:
+            layout: default
+    -
+        scope:
+            path: "" # empty string for all files
+            type: posts
+        values:
+            layout: post
+    -
+        scope:
+            path: ""
+            type: drafts
+        values:
+            layout: post
