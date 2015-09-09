@@ -6,7 +6,7 @@ description: Como sobreviver no mundo frontend sendo um programador backend e ga
 
 primeiro post no blog, _estou muito neuvosor_
 
-Nesse post vou explicar como manter sua sanidade tirando onda em um frontend totalmente agnostico com [Angular.js][angular-doc] e [Browserify][browserify] + [Babelify][babeljs](ES6 transpiler), e sendo um hipster descolado com [Gulp][gulp].
+Nesse post vou explicar como manter sua sanidade tirando onda em um frontend totalmente agnostico com [Angular.js][angular-doc] e [Browserify][browserify] + [Babelify][babeljs](ES6 transpiler), e sendo um hipster descolado com [Gulp][gulp]. E, de quebra, ver como configurar o gulp para o [LESS][less-docs] e alguns pitacos de [Ramda.js][ramda-docs].
 
 ## Requisitos
 
@@ -29,7 +29,7 @@ Nesse post vou explicar como manter sua sanidade tirando onda em um frontend tot
 - Você vai precisar do NPM para poder criar gerenciar os pacotes da sua aplicação(e instalar o Gulp);
 - Você vai precisar od [Python][python-download] porque o NPM precisa do Python em certas circunstâncias.
 
-___Lembre-se 1: eu não irei explicar cada tecnologia, apenas irei mostrar um exemplo cotidiano.___
+___Lembre-se 1: eu não irei explicar cada tecnologia e nem ensinar como usa-las, apenas irei mostrar um exemplo de uma estrutura para o cotidiano.___
 
 ___Lembre-se 2: se você estiver no Windows você precisa adicionar o Node.js, o NPM e o Python nas variáveis de ambiente, [isso aqui deve ajudar](http://superuser.com/a/143121)___
 
@@ -56,15 +56,29 @@ Crie a seguinte estrutura de diretórios e arquivos, lembrando que se você quis
 ```text
 
 src
-'-- config
-    '-- index.js
-    '-- boot.js
-'-- controllers
-    '-- index.js
-    '-- home.js
-'-- directives
-    '-- index.js
-    '-- video.js
+'-- js
+'   '-- config
+'   '   '-- index.js
+'   '   '-- boot.js
+'   '-- controllers
+'   '   '-- index.js
+'   '   '-- home.js
+'   '-- directives
+'   '   '-- index.js
+'   '   '-- video.js
+'   '-- factories
+'   '   '-- index.js
+'   '-- resources
+'   '   '-- index.js
+'   '-- services
+'   '   '-- index.js
+'   '-- templates
+'   '   '-- directives
+'   '   '   '-- video.html
+'   '   '-- index.html
+'   '-- app.js
+'-- less
+'   '-- app.less
 ```
 
 [javascript-doc]: https://developer.mozilla.org/pt-BR/docs/Web/JavaScript
@@ -74,3 +88,5 @@ src
 [gulp]: http://gulpjs.com/
 [nodejs-download]: https://nodejs.org/
 [python-download]: https://www.python.org/downloads/
+[ramda-docs]: http://ramdajs.com/docs/
+[less-docs]: http://lesscss.org/usage/
