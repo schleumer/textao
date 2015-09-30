@@ -60,7 +60,7 @@ Regra 0: evite qualquer tipo de prefixo, seja tbl, tabela, table, t, amiguinho, 
 
 Regra 1: evite ter mais de 20 campos numa tabela, sim, 20 campos, se você pegasse seu RG e colocasse todas as suas informações nele, tipo CNH, CPF, numero do cartão de crédito, comprovante de residência, certidão de nascimento, informações da CLT, nome de seus irmãos, pais, tipo sanguíneo e titulo de eleitor, ficaria ridiculo, não? Massivo? Feio? Não seria nada prazeroso procurar uma informação nele, não é? Pois é, nossas tabelas também são assim, quanto mais colunas mais arduo é o trabalho de manusear e entender a semantica dos dados;
 
-Regra 2: generalize os dados: celular e telefone são numero telefones, devem estar numa tabela __usuario_telefones__ organizados por tipos, e não como coluna na tabela usuários. Isso também serve para endereço, e-mail, documentos, etc;
+Regra 2: generalize os dados: celular e telefone residencial são numeros de telefone, devem estar numa tabela __usuario_telefones__ organizados por tipos, e não como coluna na tabela usuários(telefone1, telefone2, telefoneX). Isso também serve para endereço, e-mail, documentos, etc.;
 
 Regra 3: Lembre-se de que um dia sua aplicação pode chegar numa escala internacional e que isso pode acarretar sérios problemas caso você tenha deixado sua tabela recheada de colunas contendo dados locais tipo CPF, RG, CEP, CNH, etc., localize seu DB também! Crie uma tabela __usuario\_documentos__, organize cada documento por tipo, seja feliz!;
 
