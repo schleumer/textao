@@ -1,6 +1,6 @@
 ---
 title:  "Banco de dados mil grau"
-date:   2015-09-07 10:18:00
+date:   2015-09-30 10:18:00
 description: Como eu organizo meus bancos de dados para evitar que o caos se instale
 ---
 
