@@ -1,6 +1,6 @@
 ---
 title:  "Por que Scala, Go e PHP?"
-date:   2015-09-07 10:18:00
+date:   2017-01-21 00:00:00
 description: Manual do programador ruim
 ---
 
