@@ -15,7 +15,7 @@ não sem você fazer um pacto com alguma entidade DevOps antes).
 _PHP_, oh _PHP_. Linguagem odiada e amada por muitos, mas escrita de forma certa por
 uma parcela ínfima de programadores. _PHP_ é uma linguagem fácil, e que se você
 chutar uma pedra na rua voam 15 programadores _PHP_ prontos para aceitar um salário
-de R$ 600,00, o que te da uma segurança de que o projeto que você fez vai poder
+de R$ 600,00, o que lhe dá uma segurança de que o projeto que você fez poderá
 ser continuado caso acidentamente você morra(mas se você não for um bom programador
 não vai adiantar de muita coisa). Entretanto, muito raro, muito raro mesmo,
 alguém que saiba domar esse peixe-boi furioso, muitos ficam só no _Wordpress_ ou só
