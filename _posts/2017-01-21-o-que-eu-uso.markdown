@@ -17,11 +17,11 @@ uma parcela ínfima de programadores. _PHP_ é uma linguagem fácil, e que se vo
 chutar uma pedra na rua voam 15 programadores _PHP_ prontos para aceitar um salário
 de R$ 600,00, o que lhe dá uma segurança de que o projeto que você fez poderá
 ser continuado caso acidentamente você morra(mas se você não for um bom programador
-não vai adiantar de muita coisa). Entretanto, muito raro, muito raro mesmo,
-alguém que saiba domar esse peixe-boi furioso, muitos ficam só no _Wordpress_ ou só
-programam por cima, já que é isso que a linguagem prega: "programe pouco e saiba
-menos ainda o que está programando". _PHP_ também prega um _deploy_ simples e sem
-complicação(para o programador), mas é aí que mora o problema, no _PHP_ você não
+não vai adiantar de muita coisa).
+
+Entretanto, é muito raro, muito raro mesmo, alguém que saiba domar esse peixe-boi furioso, muitos ficam só no _Wordpress_ ou só
+programam por cima, já que é isso que a linguagem prega: "programe pouco e saiba menos ainda o que está programando".
+_PHP_ também prega um _deploy_ simples e sem complicação(para o programador), mas é aí que mora o problema, no _PHP_ você não
 tem controle sobre a _camada de rede_ da aplicação e ela fica toda a mercê do
 servidor que você contratou, o que vai te forçar num futuro proximo, se você quiser
 ter controle sobre sua aplicação a ter um servidor próprio, o que implica que
@@ -32,6 +32,8 @@ se seu conhecimento ainda for raso, você vai esbarrar no problema
 **performance**, é, _PHP_ _in natura_ tem a pior performance, _PHP_ tem o pior
 cuidado com os recursos do seu servidor, tão ruim que você poderia usar ele como
 indice num medidor de performance de uma plataforma pra indicar o pior desempenho.
+
+
 Mas, pra tudo existe uma solução, menos pro _PHP_, nem tanto, _PHP_ tem soluções boas,
 apesar delas não eliminarem os problemas _naturais_ do PHP, tipo dizer que é uma
 linguagem tipada(:joy: :joy: :joy:) e nem ao menos ter _Generics_ e até um tempo
@@ -42,7 +44,9 @@ _PHP_ possui algumas configurações super secretas como por exemplo o _OPCache_
 consiste em salvar todo código compilado num cache(vai vendo as gambiarras), acredite,
 isso melhora MUITO o desempenho da aplicação e reduz drasticamente o uso de disco
 do servidor, já que o _PHP_ lê e "compila" todos os arquivos da sua aplicação em
-cada requisição(:joy:)[2], mas, isso não é uma optimização, porque o processamento
+cada requisição(:joy:)[2].
+
+Mas, isso não é uma optimização, porque o processamento
 do código vai continuar sendo o mesmo, e é por isso que nosso caro querido amigo do peito,
 Facebook, desenvolveu em seu laboratório o _Hack_, que basicamente optimiza
 **de verdade™** o _PHP_ e dá a ele cara de uma linguagem decente, como o _Scala_ fez
@@ -120,3 +124,8 @@ class Useless {
 
 - [1] Você pode optmizar a verificação pra saber se um `array` é uma _lista_ ou _dicionario_ encapsulando o array e usando [isso](http://php.net/manual/en/class.cachingiterator.php) ;)
 - [2] Se você é um programador ao menos decentezinho que usa composer, o composer costuma literalmente foder com o desempenho da sua aplicação porque ele faz muitas requisições ao disco, então habilitar o OPCache vai fazer sua aplicação ser menos pior.
+
+
+Na duvida, escreva em _Go_.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/LJvEIjRBSDA" frameborder="0" allowfullscreen></iframe>
