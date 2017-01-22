@@ -69,6 +69,7 @@ _Go_ também é uma linguagem simples, sem muitas features e frescuras do mundo 
 # Scala
 Scala, agora sim uma linguagem e uma plataforma de verdade, você não conseguiria odiar ela(a menos
   que você utilize linguagens melhores que Scala, tipo Elixir), Scala tem pontos:
+  
 - SBT(Scala Build Tool, não é a emissora não), seu gerenciador de pacotes, que também é uma ferramenta de contrução de código
 - Versionamento, SBT leva o versionamento a sério, ele utiliza o Ivy como resolvedor, e você além de poder utilizar multiplas versões
 dos pacotes no mesmo ambiente de desenvolvimento, você pode usar multiplas versões dos pacotes na mesma aplicação, assim você não vai ter
