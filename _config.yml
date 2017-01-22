@@ -4,6 +4,8 @@ meta_description: "Prometo não invocar Cthulhu"
 
 aboutPage: true
 
+gems: ["jekyll-paginate"]
+
 markdown: redcarpet
 redcarpet:
   extensions: ["strikethrough", "superscript"]
